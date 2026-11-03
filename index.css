@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { @apply bg-ink text-[#e9edf7] font-sans leading-relaxed m-0; }
+h1, h2, .brand { @apply font-display; }
+a:focus-visible, button:focus-visible { outline: 2px solid #ff7a1a; outline-offset: 3px; border-radius: 6px; }
+.panel { background: rgba(5,5,16,.72); border: 1px solid #1b2140; backdrop-filter: blur(6px); @apply rounded-2xl; }
+.row { @apply flex items-center gap-4 py-4 border-b border-line transition-all duration-300; }
+.row:hover { @apply pl-3 border-flame; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
